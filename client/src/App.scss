@@ -1,0 +1,28 @@
+.App {
+  &__head {
+    height: 80px;
+    background-color: #1babe4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 40px;
+    .btn-floating {
+      position: absolute;
+      right: 20px;
+      bottom: 0;
+      transform: translateY(45%);
+    }
+  }
+  &__head-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  &__chats {
+    width: 768px;
+    margin: 0 auto;
+  }
+  
+}

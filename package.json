@@ -1,0 +1,32 @@
+{
+  "name": "node-js-study",
+  "version": "1.0.0",
+  "description": "------------\r 1. **Todo**\r 2. Project_2\r ------------\r *A todo app that stores data in a json file*\r - view engine: pug\r - layout: materialize",
+  "main": "index.js",
+  "scripts": {
+    "dev:client": "cd client && npm start",
+    "dev:server": "cd server && npm run dev",
+    "init:client": "cd client && npm i",
+    "init:server": "cd server && npm i",
+    "init": "concurrently \"npm run init:client\" \"npm run init:server\"",
+    "build:client": "cd client && npm i && npm run build",
+    "build:server": "cd server && npm i",
+    "build": "concurrently \"npm run build:client\" \"npm run build:server\"",
+    "start": "cd server && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleg9952/node-js-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleg9952/node-js-study/issues"
+  },
+  "homepage": "https://github.com/oleg9952/node-js-study#readme",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "uuid": "^8.0.0"
+  }
+}

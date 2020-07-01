@@ -1,0 +1,32 @@
+.chatitem {
+    height: 70px;
+    background-color: #1a97c9;
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+    transition: .3s;
+    margin: 15px 0;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: show .8s forwards;
+    i {
+        font-size: 30px;
+    }
+    p {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+.chatitem:hover {
+    background-color: #39b8eb;
+}
+
+@keyframes show {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
